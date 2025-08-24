@@ -36,6 +36,15 @@ For each provided ad URL, the script downloads the full description, price,
 location, date string, and main image and updates the corresponding record in
 the database. Requests are throttled and a custom User-Agent is used.
 
+### Export ads to CSV
+
+```bash
+python export_ads.py
+```
+
+The script interactively asks for a minimum/maximum price and maximum age in days
+and writes the matching active ads to `ads.csv`.
+
 ## Modules
 
 * `model.py` – Dataclass representing an ad.
@@ -43,6 +52,7 @@ the database. Requests are throttled and a custom User-Agent is used.
 * `de_dates.py` – Parse German relative dates to ISO format.
 * `rss_ingest.py` – Poll RSS feeds and store ads.
 * `enrich_playwright.py` – Enrich ads by visiting the ad page.
+* `export_ads.py` – Export filtered ads to a CSV file.
 
 ## Schema
 
