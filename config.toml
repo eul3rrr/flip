@@ -1,0 +1,8 @@
+# Configuration for RSS ingestion
+poll_interval_minutes = 15
+feeds = [
+    "https://www.kleinanzeigen.de/s-fahrrader/kleinanzeigen/c216",
+    # Add more feed URLs here
+]
+# Optional: path to database file
+# database = "ads.db"
