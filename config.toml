@@ -2,6 +2,7 @@
 poll_interval_minutes = 15
 feeds = [
     "https://www.kleinanzeigen.de/s-fahrrader/kleinanzeigen/c216",
+    "https://www.kleinanzeigen.de/s-fahrraeder/14055/bulls/k0c217l3337r10"
     # Add more feed URLs here
 ]
 # Optional: path to database file
